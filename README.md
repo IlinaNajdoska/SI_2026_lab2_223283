@@ -60,3 +60,27 @@
 ### Тест случаи според критериумот Multiple condition
 
 За да се исполни Multiple Condition критериумот, потребно е да се проверат сите можни комбинации од True (Т) и False (F) исходи за поединечните подуслови внатре во сложените if изрази.
+
+**Тестирање за условот во borrowBook**
+if (title.isEmpty() || author.isEmpty())
+
+| Тест случај | title.isEmpty() | author.isEmpty() |
+|-------------|-----------------|------------------|
+| ТС1         | true            | true             |
+| ТС2         | true            | false            |
+| ТС3         | false           | true             |
+| ТС4         | false           | false            |
+
+
+**Tестирање за searchBookByTitle**
+if (book.getTitle().equalsIgnoreCase(title) && !book.isBorrowed())
+
+| Тест случај | book.getTitle().equalsIgnoreCase(title) | !book.isBorrowed() |
+|-------------|-----------------------------------------|--------------------|
+| ТС1         | true                                    | true               |
+| ТС2         | true                                    | false              |
+| ТС3         | false                                   | true               |
+| ТС4         | false                                   | false              |
+
+
+**Минималниот број на тест случаи за двата услови е 4.**

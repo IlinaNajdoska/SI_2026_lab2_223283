@@ -75,12 +75,12 @@ if (title.isEmpty() || author.isEmpty())
 **Tестирање за searchBookByTitle**
 if (book.getTitle().equalsIgnoreCase(title) && !book.isBorrowed())
 
-| Тест случај | book.getTitle().equalsIgnoreCase(title) | !book.isBorrowed() |
-|-------------|-----------------------------------------|--------------------|
-| ТС1         | true                                    | true               |
-| ТС2         | true                                    | false              |
-| ТС3         | false                                   | true               |
-| ТС4         | false                                   | false              |
+| Тест случај | Насловот се совпаѓа | book.isBorrowed() |
+|-------------|---------------------|-------------------|
+| ТС1         | true                | false             |
+| ТС2         | true                | true              |
+| ТС3         | false               | false             |
+| ТС4         | false               | true              |
 
 
 **Минималниот број на тест случаи за двата услови е 4.**

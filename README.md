@@ -62,6 +62,7 @@
 За да се исполни Multiple Condition критериумот, потребно е да се проверат сите можни комбинации од True (Т) и False (F) исходи за поединечните подуслови внатре во сложените if изрази.
 
 **Тестирање за условот во borrowBook**
+
 if (title.isEmpty() || author.isEmpty())
 
 | Тест случај | title.isEmpty() | author.isEmpty() |
@@ -73,6 +74,7 @@ if (title.isEmpty() || author.isEmpty())
 
 
 **Tестирање за searchBookByTitle**
+
 if (book.getTitle().equalsIgnoreCase(title) && !book.isBorrowed())
 
 | Тест случај | Насловот се совпаѓа | book.isBorrowed() |
